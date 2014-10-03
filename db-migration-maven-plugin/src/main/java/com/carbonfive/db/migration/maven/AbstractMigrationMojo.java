@@ -16,7 +16,7 @@ import static org.apache.commons.lang.StringUtils.*;
 public abstract class AbstractMigrationMojo extends AbstractMojo
 {
     /**
-     * @parameter expression="${project}"
+     * @parameter property="project"
      * @required
      */
     protected MavenProject project;
