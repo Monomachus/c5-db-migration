@@ -8,6 +8,7 @@ import org.springframework.jdbc.datasource.*;
 
 import javax.sql.*;
 import java.sql.*;
+import java.util.logging.Logger;
 
 public class RoutingDataSourceTest
 {
@@ -88,6 +89,10 @@ public class RoutingDataSourceTest
         public Connection getConnection(String username, String password) throws SQLException
         {
             return connection;
+        }
+
+        public Logger getParentLogger() throws SQLFeatureNotSupportedException {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
         }
     }
 }
