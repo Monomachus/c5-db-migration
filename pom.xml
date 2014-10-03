@@ -57,14 +57,14 @@
         <repository>
             <id>c5-public-repository</id>
             <name>Carbon Five Public Repository</name>
-            <url>http://mvn.carbonfive.com/public</url>
+            <url>http://mvn.carbonfive.com/nexus/content/groups/public</url>
             <snapshots>
                 <updatePolicy>always</updatePolicy>
             </snapshots>
         </repository>
         <repository>
             <id>jboss-repository</id>
-            <url>http://repository.jboss.org/maven2</url>
+            <url>http://repository.jboss.org/nexus/content/repositories/root_repository/maven2/</url>
         </repository>
     </repositories>
 
@@ -222,8 +222,8 @@
                 </configuration>
             </plugin>
             <plugin>
-                <version>2.1</version>
                 <artifactId>maven-dependency-plugin</artifactId>
+                <version>2.1</version>
             </plugin>
         </plugins>
     </build>
